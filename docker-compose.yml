@@ -7,4 +7,9 @@ services:
       context: .
       dockerfile: Dockerfile
     ports: 
-      - 80:80
+      - 8080:80
+  php:
+    image: phpdockerio/php7-fpm
+
+volumes: 
+  php:
